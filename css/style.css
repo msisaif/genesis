@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+ol,
+li,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+/*  ==================== Common CSS end ==================== */
+
+/* ================= Variable Start ================= */
+:root {
+    --color-1: #31c5ce;
+    --color-2: #32588b;
+    --color-3: #f75843;
+    --color-4: #008287;
+    --color-5: #0f77b7;
+    --color-6: #102083;
+    --color-7: #44ca75;
+}
+
+/* ================= Variable End ================= */
+
+/*  =================== Sticky Footer Start ================  
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.page__content {
+    min-height: 100%;
+    /*Margin-bottom: - value of footer height*/
+    margin-bottom: -200px;
+}
+
+.page__content::after {
+    content: "";
+    display: block;
+}
+
+footer,
+.page__content::after {
+    height: 200px;
+}
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===================== Sticky Footer End ==================   */
+
+
+
+/* ================= Menu Part Start ================= */
+.main_menu {
+    background: var(--color-1);
+    height: 80px;
+    z-index: 999;
+}
+
+.menu_fixed {
+    height: 80px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.main_menu .navbar-brand img {
+    transform: translateY(-10px)
+}
+
+.main_menu .navbar-brand .brand_text {
+    color: #fff;
+    font-size: 52px;
+}
+
+.main_menu .navbar-nav .nav-item .nav-link {
+    padding: 0;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 30px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 1;
+
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+}
+
+.main_menu .navbar-nav .nav-item .nav-link:hover {
+    color: var(--color-5);
+}
+
+.main_menu .navbar-nav .nav-item .nav-link.menu_button {
+    background: #fff;
+    color: var(--color-5);
+    padding: 0 10px;
+    border-radius: 7px;
+    border: 0;
+}
+
+.main_menu .navbar-nav .nav-item .nav-link.menu_button:hover {
+    background: var(--color-5);
+    color: #fff;
+}
+
+/* ================= Menu Part End ================= */
+
+
+/* ================= Header Part Start ================= */
+#header_part {
+    margin-top: 70px;
+    background: var(--color-1);
+}
+
+#header_part h1 {
+    text-align: center;
+    font-family: sans-serif;
+    color: #fff;
+    font-weight: 900;
+    padding: 40px 0;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+/* ================= Header Part End ================= */
+
+
+/* ================= Banner Part Start ================= */
+#banner_part {
+    background: var(--color-2);
+    padding: 30px 0;
+    text-align: center;
+}
+
+.banner_text h3 {
+    color: #fff;
+    font-size: 46px;
+    font-weight: 600;
+    font-family: sans-serif;
+    line-height: 160px;
+}
+
+.banner_text a {
+    color: #fff;
+    font-size: 42px;
+    line-height: 80px;
+    font-weight: 600;
+    padding: 0 30px;
+    border-radius: 30px;
+    background: var(--color-7);
+    border: 3px solid var(--color-7);
+    text-transform: uppercase;
+}
+
+.banner_text a span {
+    font-weight: 700;
+    font-size: 46px;
+}
+
+.banner_text a:hover {
+    background: transparent;
+    color: var(--color-7);
+}
+
+/* ================= Banner Part End ================= */
+
+
+/* ================= Course Part Start ================= */
+#course_part {
+    padding: 30px 0;
+    background: var(--color-1);
+}
+
+#course_part .item-1 .card {
+    background: var(--color-3);
+}
+
+#course_part .item-2 .card {
+    background: var(--color-4);
+}
+
+#course_part .item-3 .card {
+    background: var(--color-5);
+}
+
+#course_part .item-4 .card {
+    background: var(--color-6);
+}
+
+#course_part .item h5 {
+    font-size: 28px;
+    line-height: 50px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#course_part .item h6 {
+    font-size: 24px;
+    color: #fff;
+    line-height: 40px;
+    text-align: left;
+}
+
+#course_part .item p {
+    font-size: 22px;
+    color: #ffffff40;
+    line-height: 60px;
+    text-align: left;
+    
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+}
+
+#course_part .item p i {
+    float: right;
+    line-height: 60px;
+}
+
+#course_part .item .card:hover p {
+    color: #fff;
+}
+
+.student_counter {
+    margin-top: 30px;
+    background: var(--color-2);
+    padding: 20px 0;
+}
+
+.student_counter span {
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.student_counter p {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* ================= Course Part End ================= */
+
+
+/* ================= Header, Nav Start ================= */
+
+/* ================= Header, Nav End ================= */
+
+
+/* ================= Footer Part Start ================= */
+footer {
+    background: var(--color-2);
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer .social_link a i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 22px;
+    margin: 0 5px;
+
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+}
+
+footer .social_link a i:hover {
+    color: var(--color-3);
+    background: #fff;
+}
+
+footer p {
+    line-height: 60px;
+    color: #fff;
+}
+
+footer p a {
+    color: var(--color-7);
+}
+
+footer p a:hover {
+    text-decoration: underline;
+    color: var(--color-7);
+}
+
+/* ================= Footer Part End ================= */
