@@ -37,6 +37,10 @@ span {
     padding: 0;
 }
 
+.container {
+    max-width: 1200px;
+}
+
 /*  ==================== Common CSS end ==================== */
 
 /* ================= Variable Start ================= */
@@ -52,7 +56,7 @@ span {
 
 /* ================= Variable End ================= */
 
-/*  =================== Sticky Footer Start ================  
+/*  =================== Sticky Footer Start ================
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   */
 html,
 body {
@@ -78,7 +82,6 @@ footer,
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ===================== Sticky Footer End ==================   */
-
 
 
 /* ================= Menu Part Start ================= */
@@ -134,6 +137,7 @@ footer,
     padding: 0 10px;
     border-radius: 7px;
     border: 0;
+    text-transform: capitalize;
 }
 
 .main_menu .navbar-nav .nav-item .nav-link.menu_button:hover {
@@ -152,9 +156,9 @@ footer,
 
 #header_part h1 {
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #fff;
-    font-weight: 900;
+    font-weight: 700;
     padding: 40px 0;
     font-size: 32px;
     text-transform: uppercase;
@@ -205,46 +209,70 @@ footer,
 
 /* ================= Course Part Start ================= */
 #course_part {
-    padding: 30px 0;
+    padding: 30px 0 0;
     background: var(--color-1);
 }
 
+#course_part .items {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+#course_part .item {
+    width: 19%;
+    min-width: 210px;
+    margin-bottom: 15px;
+}
+
 #course_part .item-1 .card {
-    background: var(--color-3);
-}
-
-#course_part .item-2 .card {
-    background: var(--color-4);
-}
-
-#course_part .item-3 .card {
-    background: var(--color-5);
-}
-
-#course_part .item-4 .card {
     background: var(--color-6);
 }
 
+#course_part .item-2 .card {
+    background: var(--color-2);
+}
+
+#course_part .item-3 .card {
+    background: var(--color-3);
+}
+
+#course_part .item-4 .card {
+    background: var(--color-4);
+}
+
+#course_part .item-5 .card {
+    background: var(--color-5);
+}
+
 #course_part .item h5 {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 50px;
     font-weight: 700;
     color: #fff;
 }
 
 #course_part .item h6 {
-    font-size: 24px;
+    font-size: 22px;
     color: #fff;
     line-height: 40px;
     text-align: left;
 }
 
 #course_part .item p {
-    font-size: 22px;
+    font-size: 24px;
     color: #ffffff40;
     line-height: 60px;
     text-align: left;
-    
+
     -webkit-transition: all linear 0.2s;
     -moz-transition: all linear 0.2s;
     -ms-transition: all linear 0.2s;
@@ -262,12 +290,12 @@ footer,
 }
 
 .student_counter {
-    margin-top: 30px;
+    margin-top: 15px;
     background: var(--color-2);
     padding: 20px 0;
 }
 
-.student_counter span {
+.student_counter > span {
     font-size: 60px;
     font-weight: 700;
     color: #fff;
@@ -280,6 +308,138 @@ footer,
 }
 
 /* ================= Course Part End ================= */
+
+
+/* ================= Schedule Part Start ================= */
+#schedule_part {
+    background: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+#schedule_part h2 {
+    color: var(--color-2);
+    font-size: 46px;
+    font-weight: 600;
+    font-family: sans-serif;
+    line-height: 160px;
+}
+
+#schedule_part a {
+    color: #fff;
+    font-size: 42px;
+    line-height: 80px;
+    font-weight: 600;
+    padding: 0 30px;
+    border-radius: 30px;
+    background: var(--color-7);
+    border: 3px solid var(--color-7);
+    text-transform: uppercase;
+}
+
+#schedule_part a span {
+    font-weight: 700;
+    font-size: 46px;
+}
+
+#schedule_part a:hover {
+    background: transparent;
+    color: var(--color-7);
+}
+
+.schedule_btn {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.schedule_btn button {
+    font-family: sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 0 20px;
+    margin: 0 5px;
+    color: #fff;
+    min-width: 140px;
+    cursor: pointer;
+    -webkit-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+}
+
+.schedule_btn button:hover {
+    background: #fff;
+}
+
+.schedule_btn .btn-1 {
+    border: 2px solid var(--color-7);
+    background: var(--color-7);
+}
+
+.schedule_btn .btn-1:hover {
+    color: var(--color-7);
+}
+
+.schedule_btn .btn-2 {
+    border: 2px solid var(--color-2);
+    background: var(--color-2);
+}
+
+.schedule_btn .btn-2:hover {
+    color: var(--color-2);
+}
+
+.schedule_btn .btn-3 {
+    border: 2px solid var(--color-3);
+    background: var(--color-3);
+}
+
+.schedule_btn .btn-3:hover {
+    color: var(--color-3);
+}
+
+.schedule_btn .btn-4 {
+    border: 2px solid var(--color-4);
+    background: var(--color-4);
+}
+
+.schedule_btn .btn-4:hover {
+    color: var(--color-4);
+}
+
+.schedule_btn .btn-5 {
+    border: 2px solid var(--color-5);
+    background: var(--color-5);
+}
+
+.schedule_btn .btn-5:hover {
+    color: var(--color-5);
+}
+
+.schedule_btn .btn-6 {
+    border: 2px solid var(--color-6);
+    background: var(--color-6);
+}
+
+.schedule_btn .btn-6:hover {
+    color: var(--color-6);
+}
+
+.schedule_box {
+    overflow: auto;
+    max-height: 260px;
+}
+
+/* ================= Schedule Part End ================= */
 
 
 /* ================= Header, Nav Start ================= */

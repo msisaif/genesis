@@ -8,14 +8,14 @@
 
 
     <!-- ================= CSS Link =================
-    --------------------------------------------- -->
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="css/all.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!-- Others CSS -->
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -23,23 +23,29 @@
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
 
-    <!-- ----------------- CSS End ----------------- -->
+    <!-- ~~~~~~~~~~~~~~~~ CSS End ~~~~~~~~~~~~~~~~ -->
 
 
     <!-- ================= JavaScript =================
-    ----------------------------------------------- -->
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-1.2.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script defer src="js/jquery-3.5.1.slim.min.js"></script>
+    <script defer src="js/popper.min.js"></script>
+    <script defer src="js/bootstrap.min.js"></script>
 
     <!-- PlugIn & Others Script -->
+
+    <script defer src="js/jquery.waypoints.min.js"></script>
+    <script defer src="js/jquery.counterup.min.js"></script>
+    <script defer src="js/msi-typing.min.js"></script>
+    <script defer src="js/mixitup.min.js"></script>
+
 
 
 
     <!-- Main Script -->
-    <script src="js/script.js"></script>
-    <!-- ----------------- JS End ----------------- -->
+    <script defer src="js/script.js"></script>
+    <!-- ~~~~~~~~~~~~~~~~ JS End ~~~~~~~~~~~~~~~~ -->
     <title>GENESIS</title>
 
 </head>
@@ -51,7 +57,7 @@
         <div class="container px-0">
             <a class="navbar-brand p-0" href="#">
                 <img src="images/logo.png" alt="logo">
-                <span class="brand_text">GENESIS</span>
+                <span id="logo_typing" class="brand_text">GENESIS</span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -72,10 +78,10 @@
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link menu_button" href="#">Register</a>
+                        <a class="nav-link menu_button" href="#">Sign Up</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link menu_button" href="#">LogIn</a>
+                        <a class="nav-link menu_button" href="#">Login</a>
                     </li>
                 </ul>
             </div>
@@ -86,7 +92,7 @@
 
 
     <!-- ================= Page Content Start =================
-    ----------------------------------------------------------- -->
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <div class="page__content">
 
         <!-- ================= Header Part Start ================= -->
@@ -129,58 +135,59 @@
         <!-- ================= Course Part Start ================= -->
         <section id="course_part">
             <div class="container px-0">
-                <div class="row">
-                    <div class="col-3">
-                        <div class="item item-1">
-                            <a href="#" class="card">
-                                <div class="card-body">
-                                    <h5>Residency</h5>
-                                    <h6>Course</h6>
-                                    <p>Learn More<i class="far fa-arrow-alt-circle-right"></i></p>
-                                </div>
-                            </a>
-                        </div>
+                <div class="items">
+                    <div class="item item-1">
+                        <a href="#" class="card">
+                            <div class="card-body">
+                                <h5>Residency</h5>
+                                <h6>Course</h6>
+                                <p>Learn More<i class="far fa-arrow-alt-circle-right"></i></p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-3">
-                        <div class="item item-2">
-                            <a href="#" class="card">
-                                <div class="card-body">
-                                    <h5>FCPS Part 1</h5>
-                                    <h6>Course</h6>
-                                    <p>Learn More<i class="far fa-arrow-alt-circle-right"></i></p>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="item item-2">
+                        <a href="#" class="card">
+                            <div class="card-body">
+                                <h5>FCPS Part 1</h5>
+                                <h6>Course</h6>
+                                <p>Learn More<i class="far fa-arrow-alt-circle-right"></i></p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-3">
-                        <div class="item item-3">
-                            <a href="#" class="card">
-                                <div class="card-body">
-                                    <h5>BCS</h5>
-                                    <h6>Course</h6>
-                                    <p>Learn More<i class="far fa-arrow-alt-circle-right"></i></p>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="item item-3">
+                        <a href="#" class="card">
+                            <div class="card-body">
+                                <h5>FCPS Part 2</h5>
+                                <h6>Course</h6>
+                                <p>Learn More<i class="far fa-arrow-alt-circle-right"></i></p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-3">
-                        <div class="item item-4">
-                            <a href="#" class="card">
-                                <div class="card-body">
-                                    <h5>Diploma/Mphil</h5>
-                                    <h6>Course</h6>
-                                    <p>Learn More<i class="far fa-arrow-alt-circle-right"></i></p>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="item item-4">
+                        <a href="#" class="card">
+                            <div class="card-body">
+                                <h5>BCS</h5>
+                                <h6>Course</h6>
+                                <p>Learn More<i class="far fa-arrow-alt-circle-right"></i></p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item item-5">
+                        <a href="#" class="card">
+                            <div class="card-body">
+                                <h5>Diploma/Mphil</h5>
+                                <h6>Course</h6>
+                                <p>Learn More<i class="far fa-arrow-alt-circle-right"></i></p>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="student_counter text-center">
-                            <span class="counter">30000</span>
-                            <p>We've prepared over 30000 students!</p>
-                        </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="student_counter text-center">
+                        <span class="counter">40000</span>
+                        <p>We've prepared over <span class="counter">40000</span> students!</p>
                     </div>
                 </div>
             </div>
@@ -188,9 +195,219 @@
 
         <!-- ================= Course Part End ================= -->
 
-        <!-- ================= Header Part Start ================= -->
+        <!-- ================= Schedule Part Start ================= -->
+        <section id="schedule_part">
+            <div class="container px-0">
+                <div class="row">
+                    <div class="col">
+                        <h2>Available Batch Schedule</h2>
+                        <a class="btn" href="#">Sign up <span>FREE</span></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <ul class="schedule_btn">
+                            <li><button type="button" class="btn-1" data-filter="all">All</button></li>
+                            <li><button type="button" class="btn-2" data-filter=".residency">Residency</button></li>
+                            <li><button type="button" class="btn-3" data-filter=".fcps-part-1">FCPS Part 1</button></li>
+                            <li><button type="button" class="btn-4" data-filter=".fcps-part-2">FCPS Part 2</button></li>
+                            <li><button type="button" class="btn-5" data-filter=".bcs">BCS</button></li>
+                            <li><button type="button" class="btn-6" data-filter=".diploma">Diploma/Mphil</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col px-md-5">
+                        <div class="schedule_box mx-lg-5">
+                            <table class="table schedule_table">
+                                <tr class="mix residency">
+                                    <td>Residency</td>
+                                    <td>Course Name 1</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix residency">
+                                    <td>Residency</td>
+                                    <td>Course Name 2</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix residency">
+                                    <td>Residency</td>
+                                    <td>Course Name 3</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix residency">
+                                    <td>Residency</td>
+                                    <td>Course Name 4</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix residency">
+                                    <td>Residency</td>
+                                    <td>Course Name 5</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix residency">
+                                    <td>Residency</td>
+                                    <td>Course Name 6</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix fcps-part-1">
+                                    <td>FCPS Part 1</td>
+                                    <td>Course Name 1</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix fcps-part-1">
+                                    <td>FCPS Part 1</td>
+                                    <td>Course Name 2</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix fcps-part-1">
+                                    <td>FCPS Part 1</td>
+                                    <td>Course Name 3</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix fcps-part-1">
+                                    <td>FCPS Part 1</td>
+                                    <td>Course Name 4</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix fcps-part-1">
+                                    <td>FCPS Part 1</td>
+                                    <td>Course Name 5</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix fcps-part-1">
+                                    <td>FCPS Part 1</td>
+                                    <td>Course Name 6</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix fcps-part-2">
+                                    <td>FCPS Part 2</td>
+                                    <td>Course Name 1</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix fcps-part-2">
+                                    <td>FCPS Part 2</td>
+                                    <td>Course Name 2</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix fcps-part-2">
+                                    <td>FCPS Part 2</td>
+                                    <td>Course Name 3</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix fcps-part-2">
+                                    <td>FCPS Part 2</td>
+                                    <td>Course Name 4</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix fcps-part-2">
+                                    <td>FCPS Part 2</td>
+                                    <td>Course Name 5</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix fcps-part-2">
+                                    <td>FCPS Part 2</td>
+                                    <td>Course Name 6</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix bcs">
+                                    <td>BCS</td>
+                                    <td>Course Name 1</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix bcs">
+                                    <td>BCS</td>
+                                    <td>Course Name 2</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix bcs">
+                                    <td>BCS</td>
+                                    <td>Course Name 3</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix bcs">
+                                    <td>BCS</td>
+                                    <td>Course Name 4</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix bcs">
+                                    <td>BCS</td>
+                                    <td>Course Name 5</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix bcs">
+                                    <td>BCS</td>
+                                    <td>Course Name 6</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix diploma">
+                                    <td>Diploma</td>
+                                    <td>Course Name 1</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix diploma">
+                                    <td>Diploma</td>
+                                    <td>Course Name 2</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix diploma">
+                                    <td>Diploma</td>
+                                    <td>Course Name 3</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix diploma">
+                                    <td>Diploma</td>
+                                    <td>Course Name 4</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix diploma">
+                                    <td>Diploma</td>
+                                    <td>Course Name 5</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                                <tr class="mix diploma">
+                                    <td>Diploma</td>
+                                    <td>Course Name 6</td>
+                                    <td>Monday</td>
+                                    <td>2:00pm - 5:00pm</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <!-- ================= Header Part End ================= -->
+        <!-- ================= Schedule Part End ================= -->
 
         <!-- ================= Header Part Start ================= -->
 
@@ -206,7 +423,7 @@
 
     </div>
 
-    <!-- ---------------------------------------------------
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     ================= Page Content End ================= -->
 
 
@@ -223,4 +440,7 @@
 
     <!-- ================= Footer End ================= -->
 
-</body></html>
+
+</body>
+
+</html>
