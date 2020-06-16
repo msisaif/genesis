@@ -41,6 +41,13 @@ span {
     max-width: 1200px;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #444;
+    line-height: 1.2;
+}
+
 /*  ==================== Common CSS end ==================== */
 
 /* ================= Variable Start ================= */
@@ -55,34 +62,6 @@ span {
 }
 
 /* ================= Variable End ================= */
-
-/*  =================== Sticky Footer Start ================
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   */
-html,
-body {
-    height: 100%;
-    margin: 0;
-}
-
-.page__content {
-    min-height: 100%;
-    /*Margin-bottom: - value of footer height*/
-    margin-bottom: -200px;
-}
-
-.page__content::after {
-    content: "";
-    display: block;
-}
-
-footer,
-.page__content::after {
-    height: 200px;
-}
-
-/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-===================== Sticky Footer End ==================   */
-
 
 /* ================= Menu Part Start ================= */
 .main_menu {
@@ -394,6 +373,7 @@ footer,
     background: var(--color-2);
 }
 
+.schedule_table .residency td:first-child,
 .schedule_btn .btn-2:hover {
     color: var(--color-2);
 }
@@ -403,6 +383,7 @@ footer,
     background: var(--color-3);
 }
 
+.schedule_table .fcps-part-1 td:first-child,
 .schedule_btn .btn-3:hover {
     color: var(--color-3);
 }
@@ -412,6 +393,7 @@ footer,
     background: var(--color-4);
 }
 
+.schedule_table .fcps-part-2 td:first-child,
 .schedule_btn .btn-4:hover {
     color: var(--color-4);
 }
@@ -421,6 +403,7 @@ footer,
     background: var(--color-5);
 }
 
+.schedule_table .bcs td:first-child,
 .schedule_btn .btn-5:hover {
     color: var(--color-5);
 }
@@ -430,6 +413,7 @@ footer,
     background: var(--color-6);
 }
 
+.schedule_table .diploma td:first-child,
 .schedule_btn .btn-6:hover {
     color: var(--color-6);
 }
@@ -439,12 +423,145 @@ footer,
     max-height: 260px;
 }
 
+.schedule_table tr td {
+    font-weight: 600;
+}
+
 /* ================= Schedule Part End ================= */
 
 
-/* ================= Header, Nav Start ================= */
+/* ================= Testimonial Part Start ================= */
+#testimonial_part {
+    background: var(--color-2);
+    padding: 30px 0;
+}
 
-/* ================= Header, Nav End ================= */
+#testimonial_part .header h2 {
+    font-size: 4rem;
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+}
+
+#testimonial_part .card {
+    background: var(--color-2);
+    border: 1px solid #ffffff10;
+    border-radius: 10px;
+}
+
+#testimonial_part .card p {
+    color: #fff;
+    font-size: 18px;
+    font-style: italic;
+}
+
+#testimonial_part .card h5 {
+    color: #fff;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+#testimonial_part .card h6 {
+    color: #c1c1c1;
+    font-size: 20px;
+}
+
+.testimonial_slider {
+    position: relative;
+    padding-bottom: 45px;
+}
+
+.testimonial_slider .item .img {
+    width: 20%;
+    margin-right: auto;
+    clip-path: circle(50%);
+    margin-bottom: 15px;
+}
+
+.testimonial_slider ul.slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.testimonial_slider ul.slick-dots li button {
+    font-size: 0;
+    border: 2px solid #fff;
+    background: transparent;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    outline: 0;
+    -webkit-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+}
+
+.testimonial_slider ul.slick-dots li button:hover {
+    background: #c1c1c1;
+}
+
+.testimonial_slider ul.slick-dots li.slick-active button {
+    background: #fff;
+}
+
+/* ================= Testimonial Part End ================= */
+
+
+/* ================= FAQ Part Start ================= */
+#faq_part {
+    background: var(--color-5);
+    padding: 30px 0;
+}
+
+#faq_part ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2;
+    padding-left: 10px;
+    -webkit-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+}
+
+#faq_part ul li a i {
+    opacity: 0;
+    color: #fff;
+    font-size: 18px;
+    padding-right: 5px;
+    -webkit-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+}
+
+#faq_part ul li a:hover i {
+    opacity: 1;
+}
+
+#faq_part ul li a span {
+    font-size: 20px;
+}
+
+/* ================= FAQ Part End ================= */
+
+
+/* ================= Menu Part Start ================= */
+
+/* ================= Menu Part End ================= */
 
 
 /* ================= Footer Part Start ================= */
@@ -493,3 +610,29 @@ footer p a:hover {
 }
 
 /* ================= Footer Part End ================= */
+
+/*  =================== Sticky Footer Start ================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.page__content {
+    min-height: 100%;
+    margin-bottom: -200px;
+}
+
+.page__content::after {
+    content: "";
+    display: block;
+}
+
+.footer,
+.page__content::after {
+    height: 200px;
+}
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===================== Sticky Footer End ==================   */
