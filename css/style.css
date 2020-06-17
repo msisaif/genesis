@@ -1,3 +1,10 @@
+@font-face {
+  font-family: myFont;
+  src: url(../font/films.DENMARK.ttf);
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -85,7 +92,7 @@ body {
 
 .main_menu .navbar-brand .brand_text {
     color: #fff;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'myFont', sans-serif;
     font-size: 52px;
 }
 
@@ -530,11 +537,6 @@ body {
     padding: 30px 0;
 }
 
-.faq_body {
-    overflow: auto;
-    max-height: 420px;
-}
-
 #faq_part .header h2 {
     font-size: 4rem;
     padding: 1rem;
@@ -544,14 +546,63 @@ body {
     color: #fff;
 }
 
-#faq_part ul li {
-    border: 1px solid transparent;
-    -webkit-transition: all linear 0.3s;
-    -o-transition: all linear 0.3s;
-    transition: all linear 0.3s;
+.faq_body {
+    overflow: auto;
+    max-height: 630px;
 }
 
-#faq_part ul li a {
+.faq_body .card {
+    background: transparent;
+    border: 1px solid #ffffff40;
+    border-bottom: 1px solid #ffffff20;
+}
+.faq_body .card .card-header {
+    background: transparent;
+    padding: 5px 15px;
+    border: 0;
+}
+.faq_body .card .card-body {
+    background: transparent;
+    border: 0;
+    border-top: 1px solid #ffffff20;
+}
+
+.faq_body .card .card-header a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2;
+    display: block;
+}
+
+.faq_body .card .card-body a {
+    color: #4f4;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.faq_body .card .card-body ul li,
+.faq_body .card .card-body p {
+    color: #f0f0f0;
+    font-size: 18px;
+    line-height: 2;
+    padding: 0 30px 5px 60px;
+    text-align: justify;
+    position: relative;
+}
+
+.faq_body .card .card-body p::after {
+    content: '';
+    position: absolute;
+    left: 35px;
+    top: 15px;
+    width: 7px;
+    height: 7px;
+    background: #fff;
+    border-radius: 50%;
+}
+/*
+.faq_body .card a {
     color: #fff;
     font-size: 16px;
     font-weight: 500;
@@ -559,7 +610,7 @@ body {
     padding-left: 10px;
 }
 
-#faq_part ul li a i {
+.faq_body .card a i {
     opacity: 0;
     color: #fff;
     font-size: 18px;
@@ -569,18 +620,19 @@ body {
     transition: all linear 0.3s;
 }
 
-#faq_part ul li:hover {
+.faq_body .card:hover {
     border-top: 1px solid #ffffff80;
     border-bottom: 1px solid #ffffff80;
 }
 
-#faq_part ul li a:hover i {
+.faq_body .card a:hover i {
     opacity: 1;
 }
 
-#faq_part ul li a span {
+.faq_body .card a span {
     font-size: 20px;
 }
+*/
 
 /* ================= FAQ Part End ================= */
 
