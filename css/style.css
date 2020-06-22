@@ -87,13 +87,13 @@ body {
 }
 
 .main_menu .navbar-brand img {
-    transform: translateY(-10px)
+    transform: translateY(-15px);
 }
 
 .main_menu .navbar-brand .brand_text {
     color: #fff;
     font-family: 'myFont', sans-serif;
-    font-size: 52px;
+    font-size: 60px;
 }
 
 .main_menu .navbar-nav .nav-item .nav-link {

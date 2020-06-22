@@ -1,7 +1,7 @@
 // ================ JavaScript ================
 
 //Logo Typing Effect Create By MSI:313
-msiTyping("#logo_typing", 200, 0);
+msiTyping("#logo_typing", 250, 0);
 
 
 //Mix Available Batch
