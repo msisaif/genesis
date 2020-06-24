@@ -1,19 +1,205 @@
-@media (min-width: 1200px) {
-    
+/* ================= Variable Start ================= */
+:root {
+    --color-1: #31c5ce;
+    --color-2: #32588b;
+    --color-3: #f75843;
+    --color-4: #008287;
+    --color-5: #0f77b7;
+    --color-6: #102083;
+    --color-7: #44ca75;
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+/* ================= Variable End ================= */
 
-}
+@media (min-width: 1200px) {}
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 992px) and (max-width: 1199px) {}
 
-}
+@media (min-width: 768px) and (max-width: 991px) {}
 
-@media (min-width: 576px) and (max-width: 767px) {
-
-}
+@media (min-width: 576px) and (max-width: 767px) {}
 
 @media (max-width: 575px) {
+
+    /* ================= Menu Part Start ================= */
+
+    .main_menu .navbar-brand img {
+        transform: translateY(-5px);
+        margin-left: 15px;
+    }
+
+    .main_menu .navbar-brand .brand_text {
+        font-size: 30px;
+        line-height: 80px;
+    }
+
+    .main_menu button.navbar-toggler {
+        z-index: 1000;
+        border: 0;
+        margin-right: 15px;
+    }
+
+    .main_menu button:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+
+    .main_menu button.navbar-toggler i {
+        color: #fff;
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .main_menu .navbar-nav {
+        background: var(--color-1);
+        border-top: 1px solid #ffffff80;
+        padding: 5px 0;
+    }
+
+    .main_menu .navbar-nav .nav-item .nav-link {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .main_menu .navbar-nav .nav-item .nav-link.menu_button {
+        margin-bottom: 10px;
+        max-width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+    }
+
+    /* ================= Menu Part End ================= */
+
+    /* ================= Header Part Start ================= */
+    #header_part h1 {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        word-spacing: 0;
+    }
+
+    /* ================= Header Part End ================= */
+
+    /* ================= Banner Part Start ================= */
+    .banner_text h3 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 80px;
+    }
+
+    .banner_text a {
+        font-size: 24px;
+        line-height: 60px;
+    }
+
+    .banner_text a span {
+        font-size: 28px;
+    }
+
+    #banner_part .box {
+        height: 50vw;
+    }
+
+    #banner_part iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* ================= Banner Part End ================= */
+
+    /* ================= Course Part Start ================= */
+
+    .student_counter > span {
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    .student_counter p {
+        font-size: 16px;
+        line-height: 50px;
+        font-weight: 400;
+    }
+
+    /* ================= Course Part End ================= */
+
+    /* ================= Schedule Part Start ================= */
+    #schedule_part h2 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 80px;
+    }
+
+    #schedule_part a {
+        font-size: 24px;
+        line-height: 60px;
+    }
+
+    #schedule_part a span {
+        font-size: 28px;
+    }
+
+    .schedule_btn button {
+        padding: 0 10px;
+        min-width: 140px;
+    }
+
+    .schedule_btn li {
+        margin-bottom: 5px;
+    }
+
+    .schedule_table tr td {
+        min-width: 140px;
+        font-weight: 500;
+    }
+
+    /* ================= Schedule Part End ================= */
+
+    /* ================= Testimonial Part Start ================= */
+    #testimonial_part .header h2 {
+        font-size: 24px;
+        padding: 0;
+        font-weight: 500;
+    }
+
+    /* ================= Testimonial Part End ================= */
+
+    /* ================= FAQ Part Start ================= */
+    #faq_part .header h2 {
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    .faq_body {
+        overflow: auto;
+        height: 630px;
+    }
+
+    .faq_body .card .card-header a {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .faq_body .card .card-body a {
+        font-size: 13px;
+    }
+
+    .faq_body .card .card-body ul li,
+    .faq_body .card .card-body p {
+        color: #f0f0f0;
+        font-size: 13px;
+        padding: 0 5px 5px 20px;
+    }
+
+    .faq_body .card .card-body p::after {
+        left: 5px;
+        top: 10px;
+        width: 5px;
+        height: 5px;
+    }
+
+    /* ================= FAQ Part End ================= */
 
 }

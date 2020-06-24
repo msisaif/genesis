@@ -44,10 +44,6 @@ span {
     padding: 0;
 }
 
-.container {
-    max-width: 1200px;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -77,15 +73,6 @@ body {
     z-index: 999;
 }
 
-.menu_fixed {
-    height: 80px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-}
-
 .main_menu .navbar-brand img {
     transform: translateY(-15px);
 }
@@ -99,10 +86,10 @@ body {
 .main_menu .navbar-nav .nav-item .nav-link {
     padding: 0;
     color: #fff;
-    font-size: 15px;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 35px;
     margin-left: 20px;
     position: relative;
     z-index: 1;
@@ -137,13 +124,13 @@ body {
 
 /* ================= Header Part Start ================= */
 #header_part {
-    margin-top: 70px;
+    padding-top: 70px;
     background: var(--color-1);
 }
 
 #header_part h1 {
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'myFont', sans-serif;
     color: #fff;
     font-weight: 700;
     padding: 40px 0;
@@ -190,6 +177,11 @@ body {
 .banner_text a:hover {
     background: transparent;
     color: var(--color-7);
+}
+
+#banner_part iframe {
+    width: 100%;
+    height: 320px;
 }
 
 /* ================= Banner Part End ================= */
@@ -430,7 +422,7 @@ body {
 
 .schedule_box {
     overflow: auto;
-    max-height: 260px;
+    height: 260px;
 }
 
 .schedule_table tr td {
@@ -548,7 +540,7 @@ body {
 
 .faq_body {
     overflow: auto;
-    max-height: 630px;
+    height: 630px;
 }
 
 .faq_body .card {
@@ -601,38 +593,6 @@ body {
     background: #fff;
     border-radius: 50%;
 }
-/*
-.faq_body .card a {
-    color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 2;
-    padding-left: 10px;
-}
-
-.faq_body .card a i {
-    opacity: 0;
-    color: #fff;
-    font-size: 18px;
-    padding-right: 5px;
-    -webkit-transition: all linear 0.3s;
-    -o-transition: all linear 0.3s;
-    transition: all linear 0.3s;
-}
-
-.faq_body .card:hover {
-    border-top: 1px solid #ffffff80;
-    border-bottom: 1px solid #ffffff80;
-}
-
-.faq_body .card a:hover i {
-    opacity: 1;
-}
-
-.faq_body .card a span {
-    font-size: 20px;
-}
-*/
 
 /* ================= FAQ Part End ================= */
 
@@ -688,29 +648,3 @@ footer p a:hover {
 }
 
 /* ================= Footer Part End ================= */
-
-/*  =================== Sticky Footer Start ================
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   */
-html,
-body {
-    height: 100%;
-    margin: 0;
-}
-
-.page__content {
-    min-height: 100%;
-    margin-bottom: -200px;
-}
-
-.page__content::after {
-    content: "";
-    display: block;
-}
-
-.footer,
-.page__content::after {
-    height: 200px;
-}
-
-/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-===================== Sticky Footer End ==================   */
