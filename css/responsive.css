@@ -127,7 +127,7 @@
 
     /* ================= Schedule Part Start ================= */
     #schedule_part h2 {
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 500;
         line-height: 80px;
     }
@@ -146,10 +146,6 @@
         min-width: 140px;
     }
 
-    .schedule_btn li {
-        margin-bottom: 5px;
-    }
-
     .schedule_table tr td {
         min-width: 140px;
         font-weight: 500;
@@ -159,7 +155,7 @@
 
     /* ================= Testimonial Part Start ================= */
     #testimonial_part .header h2 {
-        font-size: 24px;
+        font-size: 22px;
         padding: 0;
         font-weight: 500;
     }
@@ -178,18 +174,18 @@
     }
 
     .faq_body .card .card-header a {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 500;
     }
 
     .faq_body .card .card-body a {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .faq_body .card .card-body ul li,
     .faq_body .card .card-body p {
         color: #f0f0f0;
-        font-size: 13px;
+        font-size: 15px;
         padding: 0 5px 5px 20px;
     }
 

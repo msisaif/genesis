@@ -1,15 +1,3 @@
-// ================ JavaScript ================
-
-//Logo Typing Effect Create By MSI:313
-msiTyping("#logo_typing", 250, 0);
-
-
-//Mix Available Batch
-var containerEl = document.querySelector('.schedule_table');
-var mixer = mixitup(containerEl);
-
-
-
 // ================ jQuery Start ================
 
 // Shorthand for $( document ).ready()
@@ -57,3 +45,15 @@ $(function () {
 
 
 });
+
+
+// ================ JavaScript ================
+
+//Logo Typing Effect Create By MSI:313
+msiTyping("#logo_typing", 250, 0);
+
+
+//Mix Available Batch
+var containerEl = document.querySelector('.schedule_table');
+var mixer = mixitup(containerEl);
+
