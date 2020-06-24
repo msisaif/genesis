@@ -110,7 +110,7 @@
 
     /* ================= Banner Part End ================= */
 
-    /* ================= Course Part Start ================= */
+    /* ================= Counter Part Start ================= */
 
     .student_counter > span {
         font-size: 36px;
@@ -123,7 +123,7 @@
         font-weight: 400;
     }
 
-    /* ================= Course Part End ================= */
+    /* ================= Counter Part End ================= */
 
     /* ================= Schedule Part Start ================= */
     #schedule_part h2 {
@@ -186,6 +186,7 @@
     .faq_body .card .card-body p {
         color: #f0f0f0;
         font-size: 15px;
+
         padding: 0 5px 5px 20px;
     }
 

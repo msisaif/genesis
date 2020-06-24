@@ -189,7 +189,7 @@ body {
 
 /* ================= Course Part Start ================= */
 #course_part {
-    padding: 30px 0 0;
+    padding: 30px 0;
     background: var(--color-1);
 }
 
@@ -252,8 +252,11 @@ body {
     color: #fff;
 }
 
-.student_counter {
-    margin-top: 15px;
+/* ================= Course Part End ================= */
+
+
+/* ================= Counter Part Start ================= */
+#counter_part {
     background: var(--color-2);
     padding: 20px 0;
 }
@@ -270,7 +273,9 @@ body {
     color: #fff;
 }
 
-/* ================= Course Part End ================= */
+
+
+/* ================= Counter Part End ================= */
 
 
 /* ================= Schedule Part Start ================= */
