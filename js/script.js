@@ -1,7 +1,5 @@
-// ================ jQuery Start ================
-
-// Shorthand for $( document ).ready()
 $(function () {
+    "use strict"
 
     //Student Counter
     $('.counter').counterUp({
@@ -11,7 +9,7 @@ $(function () {
 
     //Testimonial Slider
     $('.testimonial_slider').slick({
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -20,16 +18,23 @@ $(function () {
 
         responsive: [
             {
-                breakpoint: 961,
+                breakpoint: 1200,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 993,
                 settings: {
                     slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
                     slidesToScroll: 1
                 }
             },
@@ -44,16 +49,34 @@ $(function () {
     });
 
 
+    //Logo Typing Effect Create By MSI:313
+    msiTyping("#logo_typing", 250, 0);
+
+
+    //Mix Available Batch
+    var containerEl = document.querySelector('.schedule_box');
+
+    var mixer = mixitup(containerEl);
+
+    $('.mix_solve').on('click', function () {
+        $('.mix').addClass("d_block");
+    });
+
+    $('.controls .control').on('click', function () {
+        $('.mix').removeClass("d_block");
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
-
-
-// ================ JavaScript ================
-
-//Logo Typing Effect Create By MSI:313
-msiTyping("#logo_typing", 250, 0);
-
-
-//Mix Available Batch
-var containerEl = document.querySelector('.schedule_table');
-var mixer = mixitup(containerEl);
-

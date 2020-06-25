@@ -15,9 +15,206 @@
 
 @media (min-width: 992px) and (max-width: 1199px) {}
 
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+    /* ================= Menu Part Start ================= */
 
-@media (min-width: 576px) and (max-width: 767px) {}
+    .main_menu .navbar-brand img {
+        transform: translateY(-15px);
+        margin-left: 15px;
+    }
+
+    .main_menu .navbar-brand .brand_text {
+        font-size: 56px;
+        line-height: 80px;
+    }
+
+    .main_menu button.navbar-toggler {
+        border: 0;
+        margin-right: 15px;
+    }
+
+    .main_menu button:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+
+    .main_menu button.navbar-toggler i {
+        color: #fff;
+        height: 45px;
+        width: 45px;
+        text-align: center;
+        line-height: 45px;
+    }
+
+    .main_menu .navbar-nav {
+        background: var(--color-1);
+        border-top: 1px solid #ffffff80;
+        padding: 5px 0;
+    }
+
+    .main_menu .navbar-nav .nav-item .nav-link {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .main_menu .navbar-nav .nav-item .nav-link.menu_button {
+        margin-bottom: 10px;
+        max-width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+    }
+
+    /* ================= Menu Part End ================= */
+
+    /* ================= Testimonial Part Start ================= */
+    #testimonial_part .header h2 {
+        font-size: 46px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* ================= Testimonial Part End ================= */
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    /* ================= Menu Part Start ================= */
+
+    .main_menu .navbar-brand img {
+        transform: translateY(-15px);
+        margin-left: 15px;
+    }
+
+    .main_menu .navbar-brand .brand_text {
+        font-size: 50px;
+        line-height: 80px;
+    }
+
+    .main_menu button.navbar-toggler {
+        border: 0;
+        margin-right: 15px;
+    }
+
+    .main_menu button:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+
+    .main_menu button.navbar-toggler i {
+        color: #fff;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .main_menu .navbar-nav {
+        background: var(--color-1);
+        border-top: 1px solid #ffffff80;
+        padding: 5px 0;
+    }
+
+    .main_menu .navbar-nav .nav-item .nav-link {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .main_menu .navbar-nav .nav-item .nav-link.menu_button {
+        margin-bottom: 10px;
+        max-width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+    }
+
+    /* ================= Menu Part End ================= */
+
+    /* ================= Header Part Start ================= */
+    #header_part h1 {
+        font-size: 24px;
+        line-height: 32px;
+        word-spacing: 0;
+    }
+
+    /* ================= Header Part End ================= */
+
+    /* ================= Banner Part Start ================= */
+    .banner_text h3 {
+        font-size: 32px;
+        line-height: 120px;
+    }
+
+    .banner_text a {
+        font-size: 28px;
+        line-height: 60px;
+    }
+
+    .banner_text a span {
+        font-size: 32px;
+    }
+
+    /* ================= Banner Part End ================= */
+
+    /* ================= Schedule Part Start ================= */
+    #schedule_part h2 {
+        font-size: 28px;
+        font-weight: 500;
+    }
+
+    #schedule_part a {
+        font-size: 28px;
+        line-height: 60px;
+    }
+
+    #schedule_part a span {
+        font-size: 32px;
+    }
+
+    /* ================= Schedule Part End ================= */
+
+    /* ================= Testimonial Part Start ================= */
+    #testimonial_part .header h2 {
+        font-size: 42px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* ================= Testimonial Part End ================= */
+
+    /* ================= FAQ Part Start ================= */
+    #faq_part .header h2 {
+        font-size: 46px;
+    }
+
+    .faq_body {
+        overflow: auto;
+        height: 630px;
+    }
+
+    .faq_body .card .card-header a {
+        font-size: 18px;
+    }
+
+    .faq_body .card .card-body a {
+        font-size: 16px;
+    }
+
+    .faq_body .card .card-body ul li,
+    .faq_body .card .card-body p {
+        font-size: 16px;
+        padding: 0 5px 5px 20px;
+    }
+
+    .faq_body .card .card-body p::after {
+        left: 5px;
+        top: 10px;
+    }
+
+    /* ================= FAQ Part End ================= */
+
+}
 
 @media (max-width: 575px) {
 
@@ -34,7 +231,6 @@
     }
 
     .main_menu button.navbar-toggler {
-        z-index: 1000;
         border: 0;
         margin-right: 15px;
     }
@@ -99,15 +295,6 @@
         font-size: 28px;
     }
 
-    #banner_part .box {
-        height: 50vw;
-    }
-
-    #banner_part iframe {
-        width: 100%;
-        height: 100%;
-    }
-
     /* ================= Banner Part End ================= */
 
     /* ================= Counter Part Start ================= */
@@ -141,13 +328,7 @@
         font-size: 28px;
     }
 
-    .schedule_btn button {
-        padding: 0 10px;
-        min-width: 140px;
-    }
-
-    .schedule_table tr td {
-        min-width: 140px;
+    .schedule_box tr td {
         font-weight: 500;
     }
 
@@ -184,7 +365,6 @@
 
     .faq_body .card .card-body ul li,
     .faq_body .card .card-body p {
-        color: #f0f0f0;
         font-size: 15px;
 
         padding: 0 5px 5px 20px;

@@ -1,6 +1,6 @@
 @font-face {
-  font-family: myFont;
-  src: url(../font/films.DENMARK.ttf);
+    font-family: myFont;
+    src: url(../font/films.DENMARK.ttf);
 }
 
 
@@ -49,6 +49,10 @@ body {
     font-weight: 400;
     color: #444;
     line-height: 1.2;
+}
+
+.d_block {
+    display: block !important;
 }
 
 /*  ==================== Common CSS end ==================== */
@@ -193,8 +197,7 @@ body {
     background: var(--color-1);
 }
 
-#course_part .item {
-}
+#course_part .item {}
 
 #course_part .item-1 .card {
     background: var(--color-6);
@@ -320,6 +323,8 @@ body {
 }
 
 .schedule_btn button {
+    padding: 0 10px;
+    min-width: 140px;
     font-family: sans-serif;
     font-weight: 700;
     line-height: 30px;
@@ -349,7 +354,7 @@ body {
     background: var(--color-2);
 }
 
-.schedule_table .residency td:first-child,
+.schedule_box .residency td:first-child,
 .schedule_btn .btn-2:hover {
     color: var(--color-2);
 }
@@ -359,7 +364,7 @@ body {
     background: var(--color-3);
 }
 
-.schedule_table .fcps-part-1 td:first-child,
+.schedule_box .fcps-part-1 td:first-child,
 .schedule_btn .btn-3:hover {
     color: var(--color-3);
 }
@@ -369,7 +374,7 @@ body {
     background: var(--color-4);
 }
 
-.schedule_table .fcps-part-2 td:first-child,
+.schedule_box .fcps-part-2 td:first-child,
 .schedule_btn .btn-4:hover {
     color: var(--color-4);
 }
@@ -379,7 +384,7 @@ body {
     background: var(--color-5);
 }
 
-.schedule_table .bcs td:first-child,
+.schedule_box .bcs td:first-child,
 .schedule_btn .btn-5:hover {
     color: var(--color-5);
 }
@@ -389,18 +394,25 @@ body {
     background: var(--color-6);
 }
 
-.schedule_table .diploma td:first-child,
+.schedule_box .diploma td:first-child,
 .schedule_btn .btn-6:hover {
     color: var(--color-6);
 }
 
-.schedule_box {
-    overflow: auto;
-    height: 260px;
+.schedule_box table {
+    margin-bottom: 0;
 }
 
-.schedule_table tr td {
+.schedule_box {
+    overflow: auto;
+    height: 310px;
+}
+
+.schedule_box tr td {
     font-weight: 600;
+    line-height: 50px;
+    min-width: 125px;
+    padding: 0;
 }
 
 /* ================= Schedule Part End ================= */
@@ -523,11 +535,13 @@ body {
     border: 1px solid #ffffff40;
     border-bottom: 1px solid #ffffff20;
 }
+
 .faq_body .card .card-header {
     background: transparent;
     padding: 5px 15px;
     border: 0;
 }
+
 .faq_body .card .card-body {
     background: transparent;
     border: 0;
@@ -536,7 +550,7 @@ body {
 
 .faq_body .card .card-header a {
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 2;
     display: block;
@@ -544,14 +558,14 @@ body {
 
 .faq_body .card .card-body a {
     color: #4f4;
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: underline;
 }
 
 .faq_body .card .card-body ul li,
 .faq_body .card .card-body p {
     color: #f0f0f0;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 2;
     padding: 0 30px 5px 60px;
     text-align: justify;
