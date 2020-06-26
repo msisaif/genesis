@@ -58,13 +58,13 @@ $(function () {
 
     var mixer = mixitup(containerEl);
 
-    $('.mix_solve').on('click', function () {
-        $('.mix').addClass("d_block");
-    });
-
-    $('.controls .control').on('click', function () {
-        $('.mix').removeClass("d_block");
-    });
+//    $('.mix_solve').on('click', function () {
+//        $('.mix').addClass("d_block");
+//    });
+//
+//    $('.controls .control').on('click', function () {
+//        $('.mix').removeClass("d_block");
+//    });
 
 
 

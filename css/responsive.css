@@ -280,6 +280,10 @@
     /* ================= Header Part End ================= */
 
     /* ================= Banner Part Start ================= */
+    #banner_part .box {
+        height: 50vw;
+    }
+
     .banner_text h3 {
         font-size: 24px;
         font-weight: 500;
