@@ -45,37 +45,16 @@ $(function () {
                     slidesToScroll: 1
                 }
             }
-  ]
+        ]
     });
-
 
     //Logo Typing Effect Create By MSI:313
     msiTyping("#logo_typing", 250, 0);
-
 
     //Mix Available Batch
     var containerEl = document.querySelector('.schedule_box');
 
     var mixer = mixitup(containerEl);
-
-//    $('.mix_solve').on('click', function () {
-//        $('.mix').addClass("d_block");
-//    });
-//
-//    $('.controls .control').on('click', function () {
-//        $('.mix').removeClass("d_block");
-//    });
-
-
-
-
-
-
-
-
-
-
-
 
 
 

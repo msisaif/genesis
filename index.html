@@ -45,7 +45,7 @@
     <nav id="menu_part" class="navbar navbar-expand-lg p-0 main_menu fixed-top">
         <div class="container-lg px-0">
             <a class="navbar-brand p-0" href="#">
-                <img src="images/logo.png" alt="logo">
+                <img src="images/genesis.png" alt="logo">
                 <span id="logo_typing" class="brand_text">GENESIS</span>
             </a>
             <button class="navbar-toggler mix_solve" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,22 +55,33 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#course_part">Courses</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="#schedule_part">Schedule</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#testimonial_part">Testimonial</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq_part">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about_part">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer_part">Contact</a>
+                    </li>
+                    <!--
                     <li class="nav-item">
                         <a class="nav-link menu_button" href="#">Sign Up</a>
                     </li>
+-->
                     <li class="nav-item">
-                        <a class="nav-link menu_button" href="#">Login</a>
+                        <a class="nav-link menu_button" href="#log_part">Log In</a>
                     </li>
                 </ul>
             </div>
@@ -98,21 +109,53 @@
     <section id="banner_part">
         <div class="container px-sm-0">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-lg-0 order-1">
                     <div class="box">
                         <!--
                         <video width="100%" controls autoplay>
                             <source src="videos/genesis.mp4" type="video/mp4">
                         </video>
--->
+                     -->
                         <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fgenesispgentrance%2Fvideos%2F301940220761756%2F&show_text=0&width=560" style="border:none;overflow:hidden"></iframe>
-
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="banner_text">
-                        <h3>Prepare to succeed!</h3>
-                        <a class="btn" href="#">Sign up <span>FREE</span></a>
+                <div class="col-lg-6 order-lg-1 order-0">
+                    <div id="log_part">
+                        <div class="form-box">
+                            <div class="button-box">
+                                <div id="btn"></div>
+                                <button type="button" class="toggle-btn" onclick="login()" action="">Log In</button>
+                                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                            </div>
+                            <form method="" action="" id="login" class="input-group">
+                                <input type="email" class="input-field" name="email" placeholder="Email" required>
+                                <input type="password" class="input-field password-field" name="password" placeholder="Password" required>
+                                <!--                                <span toggle=".password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>-->
+                                <input type="checkbox" class="check-box"><span>Remember Me</span>
+                                <button type="submit" class="submit-btn">Log In</button>
+                                <a href="#" class="forgot_text btn-link">Forgot password?</a>
+                            </form>
+                            <form method="" action="" id="register" class="input-group">
+                                <input type="text" id="name" class="input-field" placeholder="Full Name" name="name" value="" required>
+                                <input type="email" id="email" class="input-field" placeholder="E-mail" name="email" value="" required>
+                                <input type="text" id="phone_number" class="input-field" placeholder="Mobile Number" name="phone_number" value="" required>
+
+                                <select class="input-field form-select form-select-sm" aria-label=".form-select-sm" required="required">
+                                    <option selected>Select Medical College</option>
+                                    <option value="88">Abdul malek ukil medical college</option>
+                                    <option value="71">Addin Sokin Medical College, Jessore</option>
+                                    <option value="54">Addin Women Medical College, Dhaka</option>
+                                    <option value="57">Anwar Khan Modern Medical College, Dhaka</option>
+                                    <option value="76">Armed Forces Medical College, Dhaka</option>
+                                </select>
+
+                                <input type="text" id="bmdc" class="input-field" placeholder="BMDC Number" name="name" value="" required>
+                                <input type="password" id="password" class="input-field password-field-r" placeholder="Password" name="password" required>
+                                <!--                                <span toggle=".password-field-r" class="fa fa-fw fa-eye field-icon toggle-password-r"></span>-->
+                                <input id="password-confirm" type="password" class="input-field password-field-r" placeholder="Confirm Password" name="password_confirmation" required>
+                                <button type="submit" class="submit-btn">Register</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -125,9 +168,16 @@
     <!-- ================= Course Part Start ================= -->
     <section id="course_part">
         <div class="container px-lg-0">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Our Courses</h2>
+                </div>
+            </div>
+
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5  g-2 g-lg-3">
+
                 <div class="col item item-1">
-                    <a href="#" class="card">
+                    <a href="course-detail.html" class="card">
                         <div class="card-body">
                             <h5>Residency</h5>
                             <h6>Course</h6>
@@ -136,7 +186,7 @@
                     </a>
                 </div>
                 <div class="col item item-2">
-                    <a href="#" class="card">
+                    <a href="course-detail.html" class="card">
                         <div class="card-body">
                             <h5>FCPS Part 1</h5>
                             <h6>Course</h6>
@@ -145,7 +195,7 @@
                     </a>
                 </div>
                 <div class="col item item-3">
-                    <a href="#" class="card">
+                    <a href="course-detail.html" class="card">
                         <div class="card-body">
                             <h5>FCPS Part 2</h5>
                             <h6>Course</h6>
@@ -154,7 +204,7 @@
                     </a>
                 </div>
                 <div class="col item item-4">
-                    <a href="#" class="card">
+                    <a href="course-detail.html" class="card">
                         <div class="card-body">
                             <h5>BCS</h5>
                             <h6>Course</h6>
@@ -162,9 +212,8 @@
                         </div>
                     </a>
                 </div>
-
                 <div class="col item item-5">
-                    <a href="#" class="card">
+                    <a href="course-detail.html" class="card">
                         <div class="card-body">
                             <h5>Diploma</h5>
                             <h6>Course</h6>
@@ -187,7 +236,7 @@
             <div class="row">
                 <div class="col">
                     <div class="student_counter text-center">
-                        <span class="counter">40000</span>
+                        <h5 class="counter">40000</h5>
                         <p>We've prepared over <span class="counter">40000</span> students!</p>
                     </div>
                 </div>
@@ -221,13 +270,14 @@
                             <li class="col"><button type="button" class="btn-5 control" data-filter=".bcs">BCS</button></li>
                             <li class="col"><button type="button" class="btn-6 control" data-filter=".diploma">Diploma</button></li>
                         </ul>
-
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-12 px-md-5">
                         <div class="schedule_box mx-lg-5">
                             <div class="grid">
+
                                 <table class="table element-item residency" data-category="residency">
                                     <tr>
                                         <td>Residency</td>
@@ -308,6 +358,7 @@
                                         <td>2:00pm - 5:00pm</td>
                                     </tr>
                                 </table>
+
                             </div>
                         </div>
                     </div>
@@ -329,7 +380,9 @@
                     </div>
                 </div>
             </div>
+
             <div class="row testimonial_slider text-left">
+
                 <div class="item p-2">
                     <div class="col-12 card">
                         <div class="card-body">
@@ -402,6 +455,7 @@
             </div>
             <div class="row">
                 <div class="col">
+
                     <div id="accordion" class="faq_body">
 
                         <div class="card">
@@ -487,15 +541,14 @@
                                     </p>
                                     <ul>
                                         <li>a. Institute সিলেক্ট করুন BCPS</li>
-                                        <li>b. Course সিলেক্ট করুন FCPS Part-I Online (মনে রাখুন FCPS Part-I Online )</li>
+                                        <li>b. Course সিলেক্ট করুন FCPS Part-I Online ( মনে রাখুন FCPS Part-I Online )</li>
                                         <li>c. Session সিলেক্ট করুন July(Jul-Jan)</li>
                                         <li>d. Discipline সিলেক্ট করুন আপনি যে ডিসিপ্লিনে পরীক্ষা দিতে চান।</li>
                                         <li>e. Service point/Branch সিলেক্ট করুন #Online</li>
                                         <li>f. Batch সিলেক্ট করুন:
                                             <ul>
-                                                <li>1. Online Davidson Plus 1 Batch (মেডিসিন ও এলাইড )
-                                                </li>
-                                                <li>2. Online Foundation 1 Batch (সার্জারি ও এলাইড, পেডিয়েট্রিক্স ও এলাইড, গাইনি এন্ড অবস ও এলাইড, এনেস্থেশিওলজি, ইএনটি, অফথ্যালমোলজি, ফিজিক্যাল মেডিসিন,রেডিওলজি, রেডিওথেরাপি, ডার্মাটোলজি, সাইকিয়াট্রি )</li>
+                                                <li>1. Online Davidson Plus 1 Batch ( মেডিসিন ও এলাইড )</li>
+                                                <li>2. Online Foundation 1 Batch ( সার্জারি ও এলাইড, পেডিয়েট্রিক্স ও এলাইড, গাইনি এন্ড অবস ও এলাইড, এনেস্থেশিওলজি, ইএনটি, অফথ্যালমোলজি, ফিজিক্যাল মেডিসিন,রেডিওলজি, রেডিওথেরাপি, ডার্মাটোলজি, সাইকিয়াট্রি )</li>
                                             </ul>
                                         </li>
                                         <li>g. Year সিলেক্ট করুন 2020</li>
@@ -687,6 +740,55 @@
     </footer>
 
     <!-- ================= Footer End ================= -->
+
+
+    <script>
+        const x = document.getElementById('login')
+        const y = document.getElementById('register')
+        const z = document.getElementById('btn')
+
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        $(".toggle-password").click(function() {
+
+            $(this).toggleClass("fa-eye fa-eye-slash");
+            var input = $($(this).attr("toggle"));
+            if (input.attr("type") == "password") {
+                input.attr("type", "text");
+            } else {
+                input.attr("type", "password");
+            }
+        });
+
+        $(".toggle-password-r").click(function() {
+
+            $(this).toggleClass("fa-eye fa-eye-slash");
+            var input = $($(this).attr("toggle"));
+            if (input.attr("type") == "password") {
+                input.attr("type", "text");
+            } else {
+                input.attr("type", "password");
+            }
+        });
+
+    </script>
+
+
+
+
+
+
+
+
 
 
     <!-- ================= JavaScript =================

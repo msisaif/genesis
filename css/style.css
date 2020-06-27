@@ -3,8 +3,6 @@
     src: url(../font/films.DENMARK.ttf);
 }
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -59,6 +57,7 @@ body {
 
 /* ================= Variable Start ================= */
 :root {
+    --color-0: #f1f1f1;
     --color-1: #31c5ce;
     --color-2: #32588b;
     --color-3: #f75843;
@@ -73,6 +72,7 @@ body {
 /* ================= Menu Part Start ================= */
 .main_menu {
     background: var(--color-1);
+    background: var(--color-5);
     height: 80px;
     z-index: 999;
 }
@@ -93,7 +93,7 @@ body {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 700;
-    line-height: 35px;
+    line-height: 40px;
     margin-left: 20px;
     position: relative;
     z-index: 1;
@@ -107,19 +107,25 @@ body {
 
 .main_menu .navbar-nav .nav-item .nav-link:hover {
     color: var(--color-5);
+    color: var(--color-7);
 }
 
 .main_menu .navbar-nav .nav-item .nav-link.menu_button {
     background: #fff;
+    background: var(--color-7);
     color: var(--color-5);
+    color: #fff;
     padding: 0 10px;
-    border-radius: 7px;
-    border: 0;
+    border-radius: 8px;
+    border: 2px solid var(--color-7);
     text-transform: capitalize;
+    line-height: 32px;
 }
 
 .main_menu .navbar-nav .nav-item .nav-link.menu_button:hover {
     background: var(--color-5);
+    border: 2px solid #fff;
+    background: transparent;
     color: #fff;
 }
 
@@ -130,6 +136,7 @@ body {
 #header_part {
     padding-top: 70px;
     background: var(--color-1);
+    background: var(--color-5);
 }
 
 #header_part h1 {
@@ -194,10 +201,16 @@ body {
 /* ================= Course Part Start ================= */
 #course_part {
     padding: 30px 0;
-    background: var(--color-1);
+    background: var(--color-0);
 }
 
-#course_part .item {}
+#course_part h2 {
+    color: var(--color-2);
+    font-size: 46px;
+    font-weight: 600;
+    font-family: sans-serif;
+    line-height: 160px;
+}
 
 #course_part .item-1 .card {
     background: var(--color-6);
@@ -264,7 +277,7 @@ body {
     padding: 20px 0;
 }
 
-.student_counter > span {
+.student_counter > h5 {
     font-size: 60px;
     font-weight: 700;
     color: #fff;
@@ -286,6 +299,7 @@ body {
     background: #fff;
     padding: 30px 0;
     text-align: center;
+    background: var(--color-0);
 }
 
 #schedule_part h2 {
@@ -634,6 +648,186 @@ footer p a {
 footer p a:hover {
     text-decoration: underline;
     color: var(--color-7);
+}
+
+/* ================= Footer Part End ================= */
+
+
+
+/* ================= Footer Part End ================= */
+
+#log_part {
+    font-family: sans-serif;
+    font-size: 16px;
+
+}
+
+#log_part .form-box {
+    width: 380px;
+    height: 380px;
+    position: relative;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#log_part .button-box {
+    width: 220px;
+    margin: 30px auto;
+    position: relative;
+    -webkit-box-shadow: 0 0 10px 5px #44ca751f;
+    box-shadow: 0 0 10px 5px #44ca751f;
+    border-radius: 30px;
+}
+
+#log_part .toggle-btn {
+    padding: 5px 20px 5px 35px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#log_part #btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: #ffad06;
+    background: #ff105f;
+    background: var(--color-7);
+    border-radius: 30px;
+
+    -webkit-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+}
+
+#log_part .input-group {
+    top: 100px;
+    position: absolute;
+    width: 288px;
+
+    -webkit-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+}
+
+#log_part #register.input-group {
+    top: 75px;
+}
+
+#log_part select.input-field {
+    color: #222;
+    font-size: 16px;
+}
+#log_part .input-field {
+    width: 100%;
+    padding: 15px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+#log_part #register .input-field {
+    padding: 7px 0;
+}
+
+#log_part .submit-btn {
+    width: 85%;
+    padding: 7px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #ffad06;
+    background: #ff105f;
+    background: var(--color-7);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    margin-top: 15px;
+}
+
+#log_part .check-box {
+    margin: 30px 10px 0 0;
+}
+
+#log_part span {
+    color: #777;
+    font-size: 12px;
+    margin: 30px 10px 0 0;
+}
+
+#log_part .forgot_text {
+    margin: 30px auto;
+    display: block;
+    text-align: right;
+    color: #777;
+    font-size: 12px;
+    width: 100%;
+}
+
+#log_part #login {
+    left: 50px;
+}
+
+#log_part #register {
+    left: 450px;
+}
+
+#log_part .field-icon {
+    float: right;
+    font-size: 20px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 2;
+    color: #777;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 992px){
+    #log_part .form-box {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #log_part .form-box {
+        width: 360px;
+        margin-bottom: 30px;
+    }
+
+    #log_part .submit-btn {
+        padding: 7px 20px;
+        width: 70%;
+    }
+
+    #log_part .input-group {
+        margin-left: -10px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #log_part .form-box {
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 30px;
+    }
+
+    #log_part .submit-btn {
+        padding: 7px 10px;
+        width: 50%;
+    }
+
+    #log_part .input-group {
+        width: 268px;
+        margin-left: -20px;
+    }
 }
 
 /* ================= Footer Part End ================= */

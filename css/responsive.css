@@ -47,7 +47,7 @@
     }
 
     .main_menu .navbar-nav {
-        background: var(--color-1);
+        background: var(--color-5);
         border-top: 1px solid #ffffff80;
         padding: 5px 0;
     }
@@ -111,7 +111,7 @@
     }
 
     .main_menu .navbar-nav {
-        background: var(--color-1);
+        background: var(--color-5);
         border-top: 1px solid #ffffff80;
         padding: 5px 0;
     }
@@ -156,6 +156,13 @@
     }
 
     /* ================= Banner Part End ================= */
+
+    /* ================= Course Part Start ================= */
+    #course_part h2 {
+        font-size: 28px;
+    }
+
+    /* ================= Course Part End ================= */
 
     /* ================= Schedule Part Start ================= */
     #schedule_part h2 {
@@ -249,7 +256,7 @@
     }
 
     .main_menu .navbar-nav {
-        background: var(--color-1);
+        background: var(--color-5);
         border-top: 1px solid #ffffff80;
         padding: 5px 0;
     }
@@ -301,9 +308,17 @@
 
     /* ================= Banner Part End ================= */
 
+    /* ================= Course Part Start ================= */
+    #course_part h2 {
+        font-size: 22px;
+        line-height: 80px;
+    }
+
+    /* ================= Course Part End ================= */
+
     /* ================= Counter Part Start ================= */
 
-    .student_counter > span {
+    .student_counter > h5 {
         font-size: 36px;
         font-weight: 500;
     }
@@ -370,7 +385,6 @@
     .faq_body .card .card-body ul li,
     .faq_body .card .card-body p {
         font-size: 15px;
-
         padding: 0 5px 5px 20px;
     }
 
