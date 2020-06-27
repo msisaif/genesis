@@ -232,8 +232,14 @@
         margin-left: 15px;
     }
 
+    .main_menu .navbar-brand h5 {
+        left: 70px;
+        bottom: 8px;
+        font-size: 10.5px;
+    }
+
     .main_menu .navbar-brand .brand_text {
-        font-size: 30px;
+        font-size: 40px;
         line-height: 80px;
     }
 
@@ -311,7 +317,23 @@
     /* ================= Course Part Start ================= */
     #course_part h2 {
         font-size: 22px;
-        line-height: 80px;
+        line-height: 100px;
+        margin-top: -20px;
+    }
+
+    #course_part .item h5 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    #course_part .item p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    #course_part .item p i {
+        float: right;
+        line-height: 20px;
     }
 
     /* ================= Course Part End ================= */
@@ -319,13 +341,13 @@
     /* ================= Counter Part Start ================= */
 
     .student_counter > h5 {
-        font-size: 36px;
+        font-size: 24px;
         font-weight: 500;
     }
 
     .student_counter p {
         font-size: 16px;
-        line-height: 50px;
+        line-height: 30px;
         font-weight: 400;
     }
 

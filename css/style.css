@@ -73,18 +73,30 @@ body {
 .main_menu {
     background: var(--color-1);
     background: var(--color-5);
-    height: 80px;
+    height: 100px;
     z-index: 999;
+
 }
 
+.main_menu .navbar-brand {
+    position: relative;
+}
+.main_menu .navbar-brand h5 {
+    color: #fff;
+    position: absolute;
+    left: 55px;
+    bottom: -2px;
+    width: 100%;
+    font-size: 12px;
+}
 .main_menu .navbar-brand img {
-    transform: translateY(-15px);
+    transform: translateY(-5px);
 }
 
 .main_menu .navbar-brand .brand_text {
     color: #fff;
     font-family: 'myFont', sans-serif;
-    font-size: 60px;
+    font-size: 47px;
 }
 
 .main_menu .navbar-nav .nav-item .nav-link {
@@ -134,7 +146,7 @@ body {
 
 /* ================= Header Part Start ================= */
 #header_part {
-    padding-top: 70px;
+    padding-top: 10px;
     background: var(--color-1);
     background: var(--color-5);
 }
@@ -155,6 +167,7 @@ body {
 
 /* ================= Banner Part Start ================= */
 #banner_part {
+    margin-top: 100px;
     background: var(--color-2);
     padding: 30px 0;
     text-align: center;
@@ -200,16 +213,22 @@ body {
 
 /* ================= Course Part Start ================= */
 #course_part {
-    padding: 30px 0;
+    padding: 0 0 30px;
     background: var(--color-0);
 }
 
 #course_part h2 {
     color: var(--color-2);
+    color: #222;
     font-size: 46px;
-    font-weight: 600;
+    font-weight: 700;
     font-family: sans-serif;
     line-height: 160px;
+    margin-bottom: -30px;
+    background: var(--color-7);
+    display: inline;
+    padding: 10px 25px;
+    border-radius: 50px;
 }
 
 #course_part .item-1 .card {
@@ -233,7 +252,7 @@ body {
 }
 
 #course_part .item h5 {
-    font-size: 24px;
+    font-size: 26px;
     line-height: 50px;
     font-weight: 700;
     color: #fff;
@@ -247,7 +266,7 @@ body {
 }
 
 #course_part .item p {
-    font-size: 24px;
+    font-size: 22px;
     color: #ffffff40;
     line-height: 60px;
     text-align: left;
@@ -308,9 +327,11 @@ body {
     font-weight: 600;
     font-family: sans-serif;
     line-height: 160px;
+    text-decoration: underline;
+    text-transform: uppercase;
 }
 
-#schedule_part a {
+#schedule_part > a {
     color: #fff;
     font-size: 42px;
     line-height: 80px;
@@ -541,7 +562,7 @@ body {
 
 .faq_body {
     overflow: auto;
-    height: 630px;
+    height: 430px;
 }
 
 .faq_body .card {
