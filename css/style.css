@@ -49,6 +49,10 @@ body {
     line-height: 1.2;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .d_block {
     display: block !important;
 }
@@ -71,7 +75,6 @@ body {
 
 /* ================= Menu Part Start ================= */
 .main_menu {
-    background: var(--color-1);
     background: var(--color-5);
     height: 100px;
     z-index: 999;
@@ -81,6 +84,7 @@ body {
 .main_menu .navbar-brand {
     position: relative;
 }
+
 .main_menu .navbar-brand h5 {
     color: #fff;
     position: absolute;
@@ -89,6 +93,7 @@ body {
     width: 100%;
     font-size: 12px;
 }
+
 .main_menu .navbar-brand img {
     transform: translateY(-5px);
 }
@@ -118,14 +123,11 @@ body {
 }
 
 .main_menu .navbar-nav .nav-item .nav-link:hover {
-    color: var(--color-5);
     color: var(--color-7);
 }
 
 .main_menu .navbar-nav .nav-item .nav-link.menu_button {
-    background: #fff;
     background: var(--color-7);
-    color: var(--color-5);
     color: #fff;
     padding: 0 10px;
     border-radius: 8px;
@@ -135,7 +137,6 @@ body {
 }
 
 .main_menu .navbar-nav .nav-item .nav-link.menu_button:hover {
-    background: var(--color-5);
     border: 2px solid #fff;
     background: transparent;
     color: #fff;
@@ -147,7 +148,6 @@ body {
 /* ================= Header Part Start ================= */
 #header_part {
     padding-top: 10px;
-    background: var(--color-1);
     background: var(--color-5);
 }
 
@@ -167,7 +167,6 @@ body {
 
 /* ================= Banner Part Start ================= */
 #banner_part {
-    margin-top: 100px;
     background: var(--color-2);
     padding: 30px 0;
     text-align: center;
@@ -208,23 +207,164 @@ body {
     height: 320px;
 }
 
+/* ================= Log Part End ================= */
+
+#log_part {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+#log_part .form-box {
+    width: 100%;
+    max-width: 360px;
+    height: 390px;
+    position: relative;
+    margin: 0 auto;
+    background: #fff;
+    padding: 0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#log_part .button-box {
+    width: 220px;
+    margin: 30px auto;
+    position: relative;
+    -webkit-box-shadow: 0 0 10px 5px #44ca751f;
+    box-shadow: 0 0 10px 5px #44ca751f;
+    border-radius: 30px;
+}
+
+#log_part .toggle-btn {
+    padding: 5px 20px 5px 35px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#log_part #btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: var(--color-7);
+    border-radius: 30px;
+
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#log_part .input-group {
+    top: 100px;
+    position: absolute;
+    width: calc(100% - 60px);
+
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+#log_part #register.input-group {
+    top: 75px;
+}
+
+#log_part select.input-field {
+    color: #222;
+    font-size: 16px;
+}
+
+#log_part .input-field {
+    width: 100%;
+    padding: 15px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+#log_part #register .input-field {
+    padding: 7px 0;
+}
+
+#log_part .submit-btn {
+    width: 85%;
+    padding: 7px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: var(--color-7);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    margin-top: 15px;
+}
+
+#log_part .check-box {
+    margin: 30px 10px 0 0;
+}
+
+#log_part .remember_label {
+    color: #777;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+#log_part .forgot_text {
+    margin: 30px auto;
+    display: block;
+    text-align: right;
+    color: #777;
+    font-size: 14px;
+    width: 100%;
+}
+
+#log_part #login {
+    left: 30px;
+}
+
+#log_part #register {
+    left: 430px;
+}
+
+#log_part .field-icon {
+    font-size: 20px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 2;
+    color: #777;
+    cursor: pointer;
+    left: 90%;
+    top: -5px;
+}
+
+#log_part .field-icon.toggle-password-r {
+    top: 3px;
+}
+
+/* ================= Log Part End ================= */
+
 /* ================= Banner Part End ================= */
 
 
 /* ================= Course Part Start ================= */
 #course_part {
-    padding: 0 0 30px;
     background: var(--color-0);
 }
 
 #course_part h2 {
-    color: var(--color-2);
-    color: #222;
+    color: #fff;
     font-size: 46px;
     font-weight: 700;
     font-family: sans-serif;
     line-height: 160px;
-    margin-bottom: -30px;
     background: var(--color-7);
     display: inline;
     padding: 10px 25px;
@@ -292,8 +432,9 @@ body {
 
 /* ================= Counter Part Start ================= */
 #counter_part {
+    margin: 30px 0 0;
     background: var(--color-2);
-    padding: 20px 0;
+    padding: 30px 0;
 }
 
 .student_counter > h5 {
@@ -308,27 +449,25 @@ body {
     color: #fff;
 }
 
-
-
 /* ================= Counter Part End ================= */
 
 
 /* ================= Schedule Part Start ================= */
 #schedule_part {
-    background: #fff;
-    padding: 30px 0;
     text-align: center;
     background: var(--color-0);
 }
 
 #schedule_part h2 {
-    color: var(--color-2);
+    color: #fff;
     font-size: 46px;
-    font-weight: 600;
+    font-weight: 700;
     font-family: sans-serif;
     line-height: 160px;
-    text-decoration: underline;
-    text-transform: uppercase;
+    background: var(--color-7);
+    display: inline;
+    padding: 10px 25px;
+    border-radius: 50px;
 }
 
 #schedule_part > a {
@@ -443,10 +582,11 @@ body {
     height: 310px;
 }
 
+.schedule_box tr th,
 .schedule_box tr td {
     font-weight: 600;
     line-height: 50px;
-    min-width: 125px;
+    min-width: 230px;
     padding: 0;
 }
 
@@ -456,16 +596,18 @@ body {
 /* ================= Testimonial Part Start ================= */
 #testimonial_part {
     background: var(--color-2);
-    padding: 30px 0;
 }
 
 #testimonial_part .header h2 {
-    font-size: 4rem;
-    padding: 1rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    margin: 0;
     color: #fff;
+    font-size: 46px;
+    font-weight: 700;
+    font-family: sans-serif;
+    line-height: 160px;
+    background: var(--color-7);
+    display: inline;
+    padding: 10px 25px;
+    border-radius: 50px;
 }
 
 #testimonial_part .card {
@@ -548,21 +690,18 @@ body {
 /* ================= FAQ Part Start ================= */
 #faq_part {
     background: var(--color-5);
-    padding: 30px 0;
 }
 
 #faq_part .header h2 {
-    font-size: 4rem;
-    padding: 1rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    margin: 0;
     color: #fff;
-}
-
-.faq_body {
-    overflow: auto;
-    height: 430px;
+    font-size: 46px;
+    font-weight: 700;
+    font-family: sans-serif;
+    line-height: 160px;
+    background: var(--color-7);
+    display: inline;
+    padding: 10px 25px;
+    border-radius: 50px;
 }
 
 .faq_body .card {
@@ -669,186 +808,6 @@ footer p a {
 footer p a:hover {
     text-decoration: underline;
     color: var(--color-7);
-}
-
-/* ================= Footer Part End ================= */
-
-
-
-/* ================= Footer Part End ================= */
-
-#log_part {
-    font-family: sans-serif;
-    font-size: 16px;
-
-}
-
-#log_part .form-box {
-    width: 380px;
-    height: 380px;
-    position: relative;
-    margin: 0 auto;
-    background: rgba(255, 255, 255, 0.85);
-    padding: 0;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-#log_part .button-box {
-    width: 220px;
-    margin: 30px auto;
-    position: relative;
-    -webkit-box-shadow: 0 0 10px 5px #44ca751f;
-    box-shadow: 0 0 10px 5px #44ca751f;
-    border-radius: 30px;
-}
-
-#log_part .toggle-btn {
-    padding: 5px 20px 5px 35px;
-    cursor: pointer;
-    background: transparent;
-    border: 0;
-    outline: none;
-    position: relative;
-}
-
-#log_part #btn {
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 110px;
-    height: 100%;
-    background: #ffad06;
-    background: #ff105f;
-    background: var(--color-7);
-    border-radius: 30px;
-
-    -webkit-transition: all linear 0.3s;
-    -o-transition: all linear 0.3s;
-    transition: all linear 0.3s;
-}
-
-#log_part .input-group {
-    top: 100px;
-    position: absolute;
-    width: 288px;
-
-    -webkit-transition: all linear 0.3s;
-    -o-transition: all linear 0.3s;
-    transition: all linear 0.3s;
-}
-
-#log_part #register.input-group {
-    top: 75px;
-}
-
-#log_part select.input-field {
-    color: #222;
-    font-size: 16px;
-}
-#log_part .input-field {
-    width: 100%;
-    padding: 15px 0;
-    border: 0;
-    border-bottom: 1px solid #999;
-    outline: none;
-    background: transparent;
-}
-
-#log_part #register .input-field {
-    padding: 7px 0;
-}
-
-#log_part .submit-btn {
-    width: 85%;
-    padding: 7px 30px;
-    cursor: pointer;
-    display: block;
-    margin: auto;
-    background: #ffad06;
-    background: #ff105f;
-    background: var(--color-7);
-    border: 0;
-    outline: none;
-    border-radius: 30px;
-    margin-top: 15px;
-}
-
-#log_part .check-box {
-    margin: 30px 10px 0 0;
-}
-
-#log_part span {
-    color: #777;
-    font-size: 12px;
-    margin: 30px 10px 0 0;
-}
-
-#log_part .forgot_text {
-    margin: 30px auto;
-    display: block;
-    text-align: right;
-    color: #777;
-    font-size: 12px;
-    width: 100%;
-}
-
-#log_part #login {
-    left: 50px;
-}
-
-#log_part #register {
-    left: 450px;
-}
-
-#log_part .field-icon {
-    float: right;
-    font-size: 20px;
-    margin-top: -30px;
-    position: relative;
-    z-index: 2;
-    color: #777;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 992px){
-    #log_part .form-box {
-        margin-bottom: 30px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    #log_part .form-box {
-        width: 360px;
-        margin-bottom: 30px;
-    }
-
-    #log_part .submit-btn {
-        padding: 7px 20px;
-        width: 70%;
-    }
-
-    #log_part .input-group {
-        margin-left: -10px;
-    }
-}
-
-@media screen and (max-width: 380px) {
-    #log_part .form-box {
-        width: 100%;
-        border-radius: 0;
-        margin-bottom: 30px;
-    }
-
-    #log_part .submit-btn {
-        padding: 7px 10px;
-        width: 50%;
-    }
-
-    #log_part .input-group {
-        width: 268px;
-        margin-left: -20px;
-    }
 }
 
 /* ================= Footer Part End ================= */
