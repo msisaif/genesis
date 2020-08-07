@@ -164,7 +164,7 @@
 
     /* ================= Course Part End ================= */
 
-    /* ================= Schedule Part Start ================= */
+    /* ================= Batch Part Start ================= */
     #schedule_part h2 {
         font-size: 28px;
         font-weight: 500;
@@ -179,7 +179,7 @@
         font-size: 32px;
     }
 
-    /* ================= Schedule Part End ================= */
+    /* ================= Batch Part End ================= */
 
     /* ================= Testimonial Part Start ================= */
     #testimonial_part .header h2 {
@@ -193,11 +193,6 @@
     /* ================= FAQ Part Start ================= */
     #faq_part .header h2 {
         font-size: 46px;
-    }
-
-    .faq_body {
-        overflow: auto;
-        height: 630px;
     }
 
     .faq_body .card .card-header a {
@@ -388,11 +383,6 @@
     #faq_part .header h2 {
         font-size: 36px;
         font-weight: 600;
-    }
-
-    .faq_body {
-        overflow: auto;
-        height: 630px;
     }
 
     .faq_body .card .card-header a {
