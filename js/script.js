@@ -7,17 +7,20 @@ msiTyping("#logo_typing", 250, 0);
 const x = document.getElementById('login')
 const y = document.getElementById('register')
 const z = document.getElementById('btn')
+const m = document.getElementById('mobile')
 
 function login() {
     x.style.left = "30px";
     y.style.left = "430px";
     z.style.left = "0px";
+    m.style.height = "390px";
 }
 
 function register() {
     x.style.left = "-370px";
     y.style.left = "30px";
     z.style.left = "110px";
+    m.style.height = "390px";
 }
 
 

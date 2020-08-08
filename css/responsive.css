@@ -313,6 +313,11 @@
     .banner_text a span {
         font-size: 28px;
     }
+    
+    #log_part .form-box.mobile {
+        overflow: hidden;
+        height: 85px;
+    }
 
     /* ================= Banner Part End ================= */
 
