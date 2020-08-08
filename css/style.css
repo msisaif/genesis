@@ -61,7 +61,7 @@ html {
 
 /* ================= Variable Start ================= */
 :root {
-    --color-0: #f1f1f1;
+    --color-0: #f7f7f7;
     --color-1: #31c5ce;
     --color-2: #32588b;
     --color-3: #f75843;
@@ -78,20 +78,13 @@ html {
     background: var(--color-5);
     height: 100px;
     z-index: 999;
-
 }
 
 .main_menu .navbar-brand {
     position: relative;
-}
-
-.main_menu .navbar-brand h5 {
-    color: #fff;
-    position: absolute;
-    left: 55px;
-    bottom: -2px;
-    width: 100%;
-    font-size: 12px;
+    height: 100px;
+    padding-top: 15px;
+    margin: 0;
 }
 
 .main_menu .navbar-brand img {
@@ -102,6 +95,15 @@ html {
     color: #fff;
     font-family: 'myFont', sans-serif;
     font-size: 47px;
+}
+
+.main_menu .navbar-brand h5 {
+    color: #fff;
+    position: absolute;
+    left: 55px;
+    top: 62px;
+    width: 100%;
+    font-size: 12px;
 }
 
 .main_menu .navbar-nav .nav-item .nav-link {
@@ -356,7 +358,7 @@ html {
 
 /* ================= Course Part Start ================= */
 #course_part {
-    background: var(--color-0);
+    background: #fff;
 }
 
 #course_part h2 {
@@ -432,7 +434,7 @@ html {
 
 /* ================= Counter Part Start ================= */
 #counter_part {
-    margin: 30px 0 0;
+    margin: 30px 0;
     background: var(--color-3);
     padding: 30px 0;
 }
@@ -455,7 +457,7 @@ html {
 /* ================= Schedule Part Start ================= */
 #schedule_part {
     text-align: center;
-    background: var(--color-0);
+    background: #fff;
 }
 
 #schedule_part h2 {
