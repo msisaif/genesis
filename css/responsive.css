@@ -70,6 +70,14 @@
 
     /* ================= Menu Part End ================= */
 
+    /* ================= Banner Part Start ================= */
+    #log_part .form-box.mobile {
+        overflow: hidden;
+        height: 85px;
+    }
+
+    /* ================= Banner Part End ================= */
+
     /* ================= Testimonial Part Start ================= */
     #testimonial_part .header h2 {
         font-size: 46px;
@@ -135,15 +143,6 @@
 
     /* ================= Menu Part End ================= */
 
-    /* ================= Header Part Start ================= */
-    #header_part h1 {
-        font-size: 24px;
-        line-height: 32px;
-        word-spacing: 0;
-    }
-
-    /* ================= Header Part End ================= */
-
     /* ================= Banner Part Start ================= */
     .banner_text h3 {
         font-size: 32px;
@@ -157,6 +156,11 @@
 
     .banner_text a span {
         font-size: 32px;
+    }
+    
+    #log_part .form-box.mobile {
+        overflow: hidden;
+        height: 85px;
     }
 
     /* ================= Banner Part End ================= */
@@ -283,16 +287,6 @@
     }
 
     /* ================= Menu Part End ================= */
-
-    /* ================= Header Part Start ================= */
-    #header_part h1 {
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 24px;
-        word-spacing: 0;
-    }
-
-    /* ================= Header Part End ================= */
 
     /* ================= Banner Part Start ================= */
     #banner_part .box {
