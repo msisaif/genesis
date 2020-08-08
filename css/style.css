@@ -454,25 +454,26 @@ html {
 /* ================= Counter Part End ================= */
 
 
-/* ================= Schedule Part Start ================= */
-#schedule_part {
+/* ================= Batch Part Start ================= */
+#batch_part {
     text-align: center;
     background: #fff;
+    padding-bottom: 30px;
 }
 
-#schedule_part h2 {
+#batch_part h2 {
     color: #fff;
     font-size: 46px;
     font-weight: 700;
     font-family: sans-serif;
-    line-height: 160px;
+    line-height: 140px;
     background: var(--color-7);
     display: inline;
     padding: 10px 25px;
     border-radius: 50px;
 }
 
-#schedule_part > a {
+#batch_part > a {
     color: #fff;
     font-size: 42px;
     line-height: 80px;
@@ -484,21 +485,21 @@ html {
     text-transform: uppercase;
 }
 
-#schedule_part a span {
+#batch_part a span {
     font-weight: 700;
     font-size: 46px;
 }
 
-#schedule_part a:hover {
+#batch_part a:hover {
     background: transparent;
     color: var(--color-7);
 }
 
-.schedule_btn {
+.batch_btn {
     margin: 30px 0;
 }
 
-.schedule_btn button {
+.batch_btn button {
     padding: 0 10px;
     min-width: 140px;
     font-family: sans-serif;
@@ -512,87 +513,78 @@ html {
     transition: all linear 0.3s;
 }
 
-.schedule_btn button:hover {
+.batch_btn button:hover {
     background: #fff;
 }
 
-.schedule_btn .btn-1 {
+.batch_btn .btn-1 {
     border: 2px solid var(--color-7);
     background: var(--color-7);
 }
 
-.schedule_btn .btn-1:hover {
+.batch_btn .btn-1:hover {
     color: var(--color-7);
 }
 
-.schedule_btn .btn-2 {
+.batch_btn .btn-2 {
     border: 2px solid var(--color-2);
     background: var(--color-2);
 }
 
-.schedule_box .residency td:first-child,
-.schedule_btn .btn-2:hover {
+.batch_box .residency td:first-child,
+.batch_btn .btn-2:hover {
     color: var(--color-2);
 }
 
-.schedule_btn .btn-3 {
+.batch_btn .btn-3 {
     border: 2px solid var(--color-3);
     background: var(--color-3);
 }
 
-.schedule_box .fcps-part-1 td:first-child,
-.schedule_btn .btn-3:hover {
+.batch_box .fcps-part-1 td:first-child,
+.batch_btn .btn-3:hover {
     color: var(--color-3);
 }
 
-.schedule_btn .btn-4 {
+.batch_btn .btn-4 {
     border: 2px solid var(--color-4);
     background: var(--color-4);
 }
 
-.schedule_box .fcps-part-2 td:first-child,
-.schedule_btn .btn-4:hover {
+.batch_box .fcps-part-2 td:first-child,
+.batch_btn .btn-4:hover {
     color: var(--color-4);
 }
 
-.schedule_btn .btn-5 {
+.batch_btn .btn-5 {
     border: 2px solid var(--color-5);
     background: var(--color-5);
 }
 
-.schedule_box .bcs td:first-child,
-.schedule_btn .btn-5:hover {
+.batch_box .bcs td:first-child,
+.batch_btn .btn-5:hover {
     color: var(--color-5);
 }
 
-.schedule_btn .btn-6 {
+.batch_btn .btn-6 {
     border: 2px solid var(--color-6);
     background: var(--color-6);
 }
 
-.schedule_box .diploma td:first-child,
-.schedule_btn .btn-6:hover {
+.batch_box .diploma td:first-child,
+.batch_btn .btn-6:hover {
     color: var(--color-6);
 }
 
-.schedule_box table {
+.batch_box table {
     margin-bottom: 0;
 }
 
-.schedule_box {
+.batch_box {
     overflow: auto;
-    height: 310px;
 }
 
-.schedule_box tr th,
-.schedule_box tr td {
-    font-weight: 600;
-    line-height: 50px;
-    min-width: 230px;
-    padding: 0;
-}
-
-/* ================= Schedule Part End ================= */
+/* ================= Bacth Part End ================= */
 
 
 /* ================= Testimonial Part Start ================= */

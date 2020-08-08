@@ -25,7 +25,7 @@
     .main_menu .navbar-brand .brand_text {
         font-size: 47px;
     }
-    
+
     .main_menu .navbar-brand h5 {
         left: 71px;
     }
@@ -73,8 +73,6 @@
     /* ================= Testimonial Part Start ================= */
     #testimonial_part .header h2 {
         font-size: 46px;
-        padding-left: 0;
-        padding-right: 0;
     }
 
     /* ================= Testimonial Part End ================= */
@@ -92,7 +90,7 @@
     .main_menu .navbar-brand .brand_text {
         font-size: 47px;
     }
-    
+
     .main_menu .navbar-brand h5 {
         left: 71px;
     }
@@ -171,28 +169,24 @@
     /* ================= Course Part End ================= */
 
     /* ================= Batch Part Start ================= */
-    #schedule_part h2 {
+    #batch_part h2 {
         font-size: 28px;
         font-weight: 500;
     }
 
-    #schedule_part a {
-        font-size: 28px;
-        line-height: 60px;
-    }
-
-    #schedule_part a span {
-        font-size: 32px;
+    .batch_box tr th,
+    .batch_box tr td {
+        min-width: 180px;
     }
 
     /* ================= Batch Part End ================= */
 
     /* ================= Testimonial Part Start ================= */
+
     #testimonial_part .header h2 {
-        font-size: 42px;
-        padding-left: 0;
-        padding-right: 0;
-    }
+	font-size: 28px;
+	font-weight: 500;
+}
 
     /* ================= Testimonial Part End ================= */
 
@@ -231,7 +225,7 @@
     .main_menu .navbar-brand {
         padding-top: 5px;
     }
-    
+
     .main_menu .navbar-brand img {
         transform: translateY(-3px);
         margin-left: 15px;
@@ -326,7 +320,6 @@
     #course_part h2 {
         font-size: 22px;
         line-height: 100px;
-        margin-top: -20px;
     }
 
     #course_part .item h5 {
@@ -361,27 +354,22 @@
 
     /* ================= Counter Part End ================= */
 
-    /* ================= Schedule Part Start ================= */
-    #schedule_part h2 {
+    /* ================= Batch Part Start ================= */
+    #batch_part h2 {
         font-size: 22px;
-        font-weight: 500;
-        line-height: 80px;
+        line-height: 50px;
     }
 
-    #schedule_part a {
-        font-size: 24px;
-        line-height: 60px;
+    .batch_box tr th,
+    .batch_box tr td {
+        min-width: 180px;
     }
 
-    #schedule_part a span {
-        font-size: 28px;
-    }
-
-    .schedule_box tr td {
+    .batch_box tr td {
         font-weight: 500;
     }
 
-    /* ================= Schedule Part End ================= */
+    /* ================= batch Part End ================= */
 
     /* ================= Testimonial Part Start ================= */
     #testimonial_part .header h2 {
