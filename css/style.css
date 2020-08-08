@@ -577,7 +577,7 @@ html {
 }
 
 .batch_box {
-    overflow: scroll;
+    overflow: auto;
 }
 
 /* ================= Bacth Part End ================= */
