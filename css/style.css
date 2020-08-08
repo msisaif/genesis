@@ -209,8 +209,6 @@ html {
     height: 320px;
 }
 
-/* ================= Log Part End ================= */
-
 #log_part {
     font-family: sans-serif;
     font-size: 16px;
@@ -350,8 +348,6 @@ html {
 #log_part .field-icon.toggle-password-r {
     top: 3px;
 }
-
-/* ================= Log Part End ================= */
 
 /* ================= Banner Part End ================= */
 
@@ -581,7 +577,7 @@ html {
 }
 
 .batch_box {
-    overflow: auto;
+    overflow: scroll;
 }
 
 /* ================= Bacth Part End ================= */
