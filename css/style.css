@@ -431,19 +431,13 @@ html {
 /* ================= Counter Part Start ================= */
 #counter_part {
     margin: 30px 0;
-    background: var(--color-3);
-    padding: 30px 0;
+    background: var(--color-2);
+    padding: 15px 0;
 }
 
-.student_counter > h5 {
-    font-size: 60px;
-    font-weight: 700;
-    color: #fff;
-}
-
-.student_counter p {
+.visitor_counter p {
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 400;
     color: #fff;
 }
 
@@ -801,3 +795,163 @@ footer p a:hover {
 }
 
 /* ================= Footer Part End ================= */
+
+
+
+/* ================= Doctors Sidebar Part End ================= */
+
+
+.sidebar {
+    margin: 0;
+    padding: 15px 0;
+    width: 100%;
+    background: transparent;
+    height: 100%;
+    /* overflow: auto; */
+}
+
+.sidebar a {
+    position: relative;
+    display: block;
+    color: black;
+    padding: 7px 0 7px 15px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 10px;
+/*    border-bottom: 1px #2a88c620 solid;*/
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 300;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+/*
+.sidebar a::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 100%;
+    background: #2A88C620;
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 70px;
+    
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+*/
+
+.sidebar a.active,
+.sidebar a:hover {
+/*    background: var(--color-7);*/
+/*    background: #f7f7f7;*/
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* .sidebar a.active {
+    background-color: #2A88C6;
+    color: white;
+} */
+
+/*
+.sidebar a:hover:not(.active) {
+    background-color: #2A88C6;
+    color: white;
+}
+*/
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+/* .menu {
+    background-color:Pink;
+    color:Black;
+    border-right:1px #ffffff solid;
+}
+
+.menu:hover {
+    background-color:Orange;
+} */
+
+/*
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+*/
+
+/*
+.field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: -28px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    padding-right: 5px;
+    font-size: 21px;
+}
+
+.mobile-button {
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.mobile-button a {
+    padding-right: 10px;
+}
+*/
+
+
+/* ================= Doctors Sidebar Part End ================= */
+
+
+/* ================= Doctors Panel Part Start ================= */
+
+.panel {
+/*    margin: 30px 0;*/
+    padding: 5px;
+    margin: 15px 0;
+}
+
+.panel .panel-heading {
+    background-color: #cecece;
+    background-color: #2a88c680;
+    color: #202020;
+    color: #fff;
+    padding: 8px;
+}
+
+.panel .panel-body {
+    padding: 8px;
+    overflow: auto;
+}
+
+/* ================= Doctors panel Part End ================= */
+
+
+

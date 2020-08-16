@@ -125,11 +125,11 @@
                             <div id="mobile" class="form-box mobile">
                                 <div class="button-box">
                                     <div id="btn"></div>
-                                    <button type="button" class="toggle-btn" onclick="login()" action="">Log In</button>
+                                    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
                                     <button type="button" class="toggle-btn" onclick="register()">Register</button>
                                 </div>
-                                <form method="" action="" id="login" class="input-group">
-                                    <input type="email" class="input-field" name="email" placeholder="Email" required>
+                                <form method="" action="my-profile.html" id="login" class="input-group">
+                                    <input type="text" class="input-field" name="bmdc_no" placeholder="BMDC" required>
                                     <input type="password" class="input-field password-field" name="password" placeholder="Password" required>
                                     <i toggle=".password-field" class="fa fa-fw fa-eye field-icon toggle-password"></i>
                                     <input id="remember" type="checkbox" class="check-box">
@@ -137,7 +137,7 @@
                                     <button type="submit" class="submit-btn">Log In</button>
                                     <a href="#" class="forgot_text btn-link">Forgot password?</a>
                                 </form>
-                                <form method="" action="" id="register" class="input-group">
+                                <form method="" action="my-profile.html" id="register" class="input-group">
                                     <input type="text" id="name" class="input-field" placeholder="Full Name" name="name" value="" required>
                                     <input type="email" id="email" class="input-field" placeholder="E-mail" name="email" value="" required>
                                     <input type="text" id="phone_number" class="input-field" placeholder="Mobile Number" name="phone_number" value="" required>
@@ -238,11 +238,27 @@
         <!-- ================= Counter Part Start ================= -->
         <section id="counter_part">
             <div class="container px-lg-0">
+                <div class="row add_slider">
+                    <div class="col p-2">
+                        <img class="img-fluid w-100" src="images/add1.png" alt="">
+                    </div>
+                    <div class="col p-2">
+                        <img class="img-fluid w-100" src="images/add1.png" alt="">
+                    </div>
+                    <div class="col p-2">
+                        <img class="img-fluid w-100" src="images/add1.png" alt="">
+                    </div>
+                    <div class="col p-2">
+                        <img class="img-fluid w-100" src="images/add1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <hr class="text-white" />
+            <div class="container px-lg-0">
                 <div class="row">
                     <div class="col">
-                        <div class="student_counter text-center">
-                            <h5 class="counter">40000</h5>
-                            <p>We've prepared over <span class="counter">40000</span> students!</p>
+                        <div class="visitor_counter text-center">
+                            <p>Our Site Visitors <span class="counter">13243</span></p>
                         </div>
                     </div>
                 </div>
@@ -268,14 +284,14 @@
                     <div class="ui-group">
                         <div class="filters button-group js-radio-button-group">
                             <ul class="row controls row-cols-lg-6 row-cols-md-3 row-cols-2 batch_btn g-1">
-                                <li class="col"><button type="button" class="btn-1 control" data-filter="*">All</button></li>
+<!--                                <li class="col"><button type="button" class="btn-1 control" data-filter="*">All</button></li>-->
                                 <li class="col"><button type="button" class="btn-2 control" data-filter=".residency">Residency</button></li>
                                 <li class="col"><button type="button" class="btn-3 control" data-filter=".fcps-part-1">FCPS Part 1</button></li>
                                 <li class="col"><button type="button" class="btn-4 control" data-filter=".fcps-part-2">FCPS Part 2</button></li>
                                 <li class="col"><button type="button" class="btn-5 control" data-filter=".bcs">BCS</button></li>
                                 <li class="col"><button type="button" class="btn-6 control" data-filter=".diploma">Diploma</button></li>
-                                <!--
                                 <li class="col"><button type="button" class="btn-2 control" data-filter=".diploma-final">Diploma Final</button></li>
+                                <!--
                                 <li class="col"><button type="button" class="btn-3 control" data-filter=".phase-a">Phase-A</button></li>
                                 <li class="col"><button type="button" class="btn-4 control" data-filter=".phase-b">Phase-B</button></li>
                                 <li class="col"><button type="button" class="btn-5 control" data-filter=".mrcp">MRCP</button></li>

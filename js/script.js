@@ -53,6 +53,48 @@ $(function () {
         time: 1919
     });
 
+    //add_slider Slider
+    $('.add_slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 993,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
     //Testimonial Slider
     $('.testimonial_slider').slick({
         slidesToShow: 3,
@@ -61,6 +103,7 @@ $(function () {
         autoplaySpeed: 2000,
         arrows: false,
         dots: true,
+        pauseOnHover: false,
 
         responsive: [
             {
