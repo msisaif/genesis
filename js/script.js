@@ -1,7 +1,7 @@
 "use strict";
 
 //Logo Typing Effect Create By MSI:313
-msiTyping("#logo_typing", 250, 0);
+msiTyping("#logo_typing", 350, 0);
 
 //Login Register Form
 const x = document.getElementById('login')
